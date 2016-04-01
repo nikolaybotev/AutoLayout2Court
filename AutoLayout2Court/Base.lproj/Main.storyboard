@@ -18,19 +18,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df4-wG-HQk" userLabel="A Longer Label">
-                                <rect key="frame" x="249" y="550" width="102" height="30"/>
+                                <rect key="frame" x="200" y="550" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="A Longer Label"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9DG-Ej-V6A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRW-Tk-Fw9">
-                                <rect key="frame" x="195" y="550" width="46" height="30"/>
+                                <rect key="frame" x="146" y="550" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGq-MN-7aL">
-                                <rect key="frame" x="249" y="480" width="46" height="30"/>
+                                <rect key="frame" x="200" y="480" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.26525796210000002" green="1" blue="0.55294196299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="H46-0O-d4v"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMo-Fd-lZC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -39,7 +48,8 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yRW-Tk-Fw9" secondAttribute="bottom" constant="20" id="2xh-kU-Cdn"/>
                             <constraint firstItem="df4-wG-HQk" firstAttribute="top" secondItem="sGq-MN-7aL" secondAttribute="bottom" constant="40" id="JRq-71-F4o"/>
                             <constraint firstItem="df4-wG-HQk" firstAttribute="leading" secondItem="yRW-Tk-Fw9" secondAttribute="trailing" constant="8" id="Jem-2a-dNk"/>
-                            <constraint firstItem="sGq-MN-7aL" firstAttribute="leading" secondItem="df4-wG-HQk" secondAttribute="leading" id="SrK-d7-mE2"/>
+                            <constraint firstItem="df4-wG-HQk" firstAttribute="centerX" secondItem="sGq-MN-7aL" secondAttribute="centerX" id="LZv-HA-qyi"/>
+                            <constraint firstItem="sGq-MN-7aL" firstAttribute="width" secondItem="df4-wG-HQk" secondAttribute="width" id="ob1-lN-kqq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="df4-wG-HQk" secondAttribute="bottom" constant="20" id="rUC-0E-Rfx"/>
                         </constraints>
                     </view>
