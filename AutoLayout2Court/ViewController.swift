@@ -20,11 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func buttonTapped(sender: UIButton) {
-        if (sender.titleForState(.Normal) == "X") {
-            sender.setTitle("A very very long title for this button here", forState: .Normal)
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        if (sender.title(for: UIControlState()) == "X") {
+            sender.setTitle("A very very long title for this button here", for: UIControlState())
         } else {
-            sender.setTitle("X", forState: .Normal)
+            sender.setTitle("X", for: UIControlState())
         }
     }
 
